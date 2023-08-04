@@ -1,0 +1,17 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.form {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+}
+.form--input {
+  min-height: 50px;
+  text-indent: 10px;
+}
