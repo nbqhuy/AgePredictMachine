@@ -17,9 +17,9 @@ function App() {
     <>
       <h1>Đây là máy dự đoán tuổi của bạn</h1>
       <form className='form' onSubmit={handleSubmit}>  
-        <input id='age' className='form--input' type='number' placeholder='Nhập số tuổi của bạn' required></input>
+        <input id='age' className='form--input' type='number' min={1} placeholder='Nhập số tuổi của bạn' required></input>
         <button type='submit' onClick={predictAge} className='form--button'>Dự đoán tuổi của bạn</button>
-        <h3 className='form--result'>{age?"Số tuổi của bạn là "+age:''}</h3>
+        <h3 className='form--result'>{age>0?"Số tuổi của bạn là "+age:''}</h3>
       </form>
     </>
   )
